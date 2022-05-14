@@ -5,18 +5,6 @@ import java.util.*;
 import java.util.stream.*;
 import static java.util.stream.Collectors.toList;
 
-class Result1 {
-
-    public static long aVeryBigSum(List<Long> ar) {
-        long sum = 0L;
-        for (long l: ar) {
-            sum += (long) l;
-        }
-        return sum;
-
-    }
-
-}
 
 public class AVeryBigSum {
     public static void main(String[] args) throws IOException {
@@ -29,12 +17,21 @@ public class AVeryBigSum {
                 .map(Long::parseLong)
                 .collect(toList());
 
-        long result = Result1.aVeryBigSum(ar);
+        long result = aVeryBigSum(ar);
 
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
 
         bufferedReader.close();
         bufferedWriter.close();
+    }
+
+    public static long aVeryBigSum(List<Long> ar) {
+        long sum = 0L;
+        for (long l: ar) {
+            sum += (long) l;
+        }
+        return sum;
+
     }
 }
