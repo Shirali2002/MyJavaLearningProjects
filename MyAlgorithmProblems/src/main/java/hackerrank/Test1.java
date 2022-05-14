@@ -1,10 +1,7 @@
 package hackerrank;
 
 import java.io.*;
-import java.util.*;cd 
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.*;
 
 public class Test1 {
     public static void main(String[] args) throws IOException {
