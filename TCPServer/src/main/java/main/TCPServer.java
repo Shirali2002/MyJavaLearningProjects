@@ -6,6 +6,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import util.FileUtility;
 import lombok.SneakyThrows;
 
@@ -26,7 +29,8 @@ public class TCPServer {
             DataInputStream dataStream = new DataInputStream(connection.getInputStream());
             byte[] arr = readMessage(dataStream);
             System.out.println("Message length2= " + arr.length);
-            FileUtility.writeBytes(arr, "C:\\Users\\Shireli\\Desktop\\fira_mid.docx");
+            Files.write(Paths.get("sarkhan.jpg"), arr);
+//            FileUtility.writeBytes(arr, "C:\\Users\\Shireli\\Desktop\\fira_mid.docx");
         }
     }
 

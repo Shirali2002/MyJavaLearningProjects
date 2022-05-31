@@ -7,6 +7,9 @@ package main;
 import java.io.DataOutputStream;
 import java.io.OutputStream;
 import java.net.Socket;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import util.FileUtility;
 
 /**
@@ -24,5 +27,6 @@ public class TCPClient {
         dataOutputStream.writeInt(bytes.length);
         dataOutputStream.write(bytes);
         socket.close();
+
     }
 }
