@@ -4,7 +4,8 @@
 /FileUtil/target/
 /MyAlgorithmProblems/target/
 /MyGenerics/target/
-/MyTcpProject/target/
+/MyTcpProject/Client/target/
+/MyTcpProject/Server/target/
 /StreamAndLambdaExpressions/target/
 /.idea/
 /TCPServer/
