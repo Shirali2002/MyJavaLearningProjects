@@ -6,6 +6,8 @@
 /MyGenerics/target/
 /MyTcpProject/Client/target/
 /MyTcpProject/Server/target/
+/DesignPatterns/target/
+/DesignPatterns/.idea/
 /StreamAndLambdaExpressions/target/
 /.idea/
 /TCPServer/
