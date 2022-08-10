@@ -1,13 +1,8 @@
 package main;
 
-import myPatterns.creationalPatterns.abstractFactoryPattern.FactoryProducer;
-import myPatterns.creationalPatterns.abstractFactoryPattern.Note10;
-import myPatterns.creationalPatterns.abstractFactoryPattern.PhoneAbstractFactory;
-import myPatterns.creationalPatterns.abstractFactoryPattern.SamsungPhone;
-import myPatterns.creationalPatterns.builderPattern.BuilderClass;
-import myPatterns.creationalPatterns.factoryMethodPattern.Phone;
-import myPatterns.creationalPatterns.factoryMethodPattern.PhoneFactory;
-import myPatterns.creationalPatterns.singletonPattern.SingletonClass;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 

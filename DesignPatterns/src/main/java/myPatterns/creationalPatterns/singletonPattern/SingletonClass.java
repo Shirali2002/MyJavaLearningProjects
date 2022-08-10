@@ -3,25 +3,30 @@ package myPatterns.creationalPatterns.singletonPattern;
 public class SingletonClass {
     private static SingletonClass singleton;
 
-    private static int count = 0;
+    static {
+        singleton = new SingletonClass();
+    }
 
     private SingletonClass(){
         System.out.println("object created.");
     }
 
-    public static SingletonClass getSingleton(){
+    public static SingletonClass getSingletonBestPractise(){
+        return singleton;
+    }
+
+
+/*    public static SingletonClass getSingleton(){
 
         if (singleton == null) {
             synchronized (SingletonClass.class) {
-//                if (singleton == null) {
+                if (singleton == null) {
                     singleton = new SingletonClass();
-//                }
+                }
             }
         }
 
-        count++;
-        System.out.println(count);
 
         return singleton;
-    }
+    }*/
 }
